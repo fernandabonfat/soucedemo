@@ -1,0 +1,24 @@
+Passo a passo para criar um projeto Page Object (PO)
+
+Pre-Requisitos: Configurar o pom.xml
+
+1. Criar pasta pages dentro da pasta test/java
+	1.1. Criar classe Base.java (Verificar se será necessário ou pode-se usar somente o drive da CommonPage))
+	1.2. Criar classe CommonPage.java
+	1.3. Criar classe das páginas a serem testadas. Ex: LogIn.java, HomePage.java, etc.
+	        Em cada classe, mapear todos os elementos da tela e criar todas as ações
+
+2. Criar pasta features dentro da pasta resources
+    Criar o arquivo .feature --> Esse arquivo contém o BDD com as funcionalidades do sistema
+
+
+3.  Criar a pasta steps dentro da pasta test/java
+	Criar classe <nome_da_feature>.java
+	    Esse arquivo vai conter o teste em si, os métodos para executar os testes. (As anotações @Before e @After
+	    não ficam dentro desse arquivo, pois serão usados por mais lugares, assim será criado uma classe Hooks
+	    para isso.)
+
+
+	Criar classe Hooks.java
+	Criar classe Runner.java
+
