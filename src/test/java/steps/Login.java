@@ -9,6 +9,8 @@ import pages.Base;
 import pages.LoginPage;
 import pages.ProductsPage;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Login {
@@ -33,13 +35,15 @@ public class Login {
         loginPage.fillUsername(username);
         loginPage.fillPassword(password);
 
-        synchronized (driver) {
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+
+        /*synchronized (driver) {
             try {
                 driver.wait(1500);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 
     @And("I click on the login button")
@@ -51,26 +55,20 @@ public class Login {
     public void i_should_see_the_products_page() {
         productsPage = new ProductsPage(driver);
         assertEquals("Products", productsPage.readPageTitle());
-
-        synchronized (driver) {
-            try {
-                driver.wait(1500);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
     @Then("I should see the error message {string}")
     public void i_should_see_the_error_message(String invalidLoginMessage) {
         assertEquals(invalidLoginMessage, loginPage.readErrorMessage());
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
-        synchronized (driver) {
+       /* synchronized (driver) {
             try {
                 driver.wait(1500);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        }*/
     }
 }

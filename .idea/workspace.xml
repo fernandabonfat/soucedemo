@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46536206-f0ee-4dbb-bf0a-ccaa6ba70841" name="Changes" comment="Initial project" />
+    <list default="true" id="46536206-f0ee-4dbb-bf0a-ccaa6ba70841" name="Changes" comment="Melhorias BDD">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,29 +35,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: LogIn.executor": "Run",
-    "Cucumber Java.Feature: Login.executor": "Run",
-    "Cucumber Java.Scenario: Add a product to the cart (1).executor": "Run",
-    "Cucumber Java.Scenario: Add a product to the cart.executor": "Run",
-    "Cucumber Java.Scenario: LogIn with invalid credentials.executor": "Run",
-    "Cucumber Java.Scenario: LogIn with valid credentials.executor": "Run",
-    "Cucumber Java.Scenario: Login with empty password field.executor": "Run",
-    "Cucumber Java.Scenario: Login with empty username field.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials.executor": "Run",
-    "Cucumber Java.Scenario: Login with locked user.executor": "Run",
-    "Cucumber Java.Scenario: Login with valid credentials.executor": "Run",
-    "JUnit.Runner.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Iterasys/soucedemo/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: LogIn.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Add a product to the cart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Add a product to the cart.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: LogIn with invalid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: LogIn with valid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with empty password field.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with empty username field.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with locked user.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with valid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Remove a product from the cart.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: View the list of products.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Iterasys/soucedemo/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Add a product to the cart">
+}</component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Login with valid credentials">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -74,35 +79,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Add a product to the cart (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="soucedemo" />
-      <option name="NAME_FILTER" value="^Add a product to the cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add a product to the cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add a product to the cart" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Add a product to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Shopping" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="soucedemo" />
-      <option name="NAME_FILTER" value="^Add a product to the cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add a product to the cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add a product to the cart" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Shopping" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -114,15 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Login with locked user" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Login with valid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="soucedemo" />
-      <option name="NAME_FILTER" value="^Login with locked user$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with locked user$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Login with locked user" />
+      <option name="NAME_FILTER" value="^Login with valid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login with valid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login with valid credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -134,28 +118,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Remove a product from the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="soucedemo" />
+      <option name="NAME_FILTER" value="^Remove a product from the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Remove a product from the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Remove a product from the cart" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="steps.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="steps.Runner" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: View the list of products" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Shopping.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="soucedemo" />
+      <option name="NAME_FILTER" value="^View the list of products$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^View the list of products$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: View the list of products" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Add a product to the cart" />
-        <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Scenario: Add a product to the cart (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Login with locked user" />
+        <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+        <item itemvalue="Cucumber Java.Feature: Shopping" />
+        <item itemvalue="Cucumber Java.Scenario: View the list of products" />
         <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="Cucumber Java.Scenario: Remove a product from the cart" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737420632098</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Melhorias BDD">
+      <option name="closed" value="true" />
+      <created>1738851669366</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738851669366</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,7 +217,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial project" />
+    <MESSAGE value="Melhorias BDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Melhorias BDD" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="io.cucumber.cucumberexpressions.CucumberExpressionException" package="io.cucumber.cucumberexpressions" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/soucedemo$Feature__LogIn.ic" NAME="Feature: LogIn Coverage Results" MODIFIED="1737376214695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

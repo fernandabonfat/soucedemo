@@ -1,11 +1,17 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class ProductsPage extends CommonPage {
+
 
     // Construtor
     public ProductsPage(WebDriver driver) {
@@ -19,22 +25,24 @@ public class ProductsPage extends CommonPage {
     @FindBy(xpath = "//*[@id=\"header_container\"]/div[2]/span")
     WebElement productsPagetitle;
 
-    // Botão Add to Cart - T-Shirt
-    @FindBy(xpath = "//*[@id=\"add-to-cart-sauce-labs-bolt-t-shirt\"]")
-    WebElement addTShirtToCartButton;
+    // Lista de produtos
+    @FindBy(className = "inventory_list")
+    public WebElement productList;
+
+    // Botão Add to Cart
+    public By addProductToCart(String product) {
+        return By.xpath("//*[@id=\"add-to-cart-sauce-labs-" + product + "\"]");
+    }
 
     // Cart icon
     @FindBy(xpath = "//*[@id='shopping_cart_container']/a/span")
     WebElement cartIcon;
 
-
     // Botão Remove
-    //@FindBy(xpath = "//*[@id=\"remove-sauce-labs-backpack\"]")
-    //WebElement removeButton;
+    public By removeButton(String product) {
+        return By.xpath("//*[@id=\"remove-sauce-labs-" + product + "\"]");
+    }
 
-    // Botão Checkout
-    //@FindBy(xpath = "//*[@id=\"checkout\"]")
-    //WebElement checkoutButton;
 
     // Ações com os elementos mapeados
 
@@ -43,9 +51,14 @@ public class ProductsPage extends CommonPage {
         return productsPagetitle.getText();
     }
 
-    // Clicar no botão Add to Cart - T-Shirt
-    public void clickAddTShirtToCart() {
-        this.addTShirtToCartButton.click();
+    // Clicar no botão Add to Cart
+    public void clickAddToCart(String product) {
+        driver.findElement(addProductToCart(product)).click();
+    }
+
+    // Clicar no botão Remove
+    public void clickRemove(String product) {
+        driver.findElement(removeButton(product)).click();
     }
 
     // Read the cart icon value
@@ -53,13 +66,4 @@ public class ProductsPage extends CommonPage {
         return cartIcon.getText();
     }
 
-    // Clicar no botão Remove
-    //public void clickRemove () {
-    //    this.removeButton.click();
-    //}
-
-    // Clicar no botão Checkout
-    // public void clickCheckout () {
-    //    this.checkoutButton.click();
-    //}
 }
